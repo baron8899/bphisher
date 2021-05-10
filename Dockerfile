@@ -1,8 +1,7 @@
 FROM debian:10
-LABEL MAINTAINER="https://github.com/htr-tech/zphisher"
-
-WORKDIR zphisher/
-ADD . /zphisher
+LABEL MAINTAINER="https://github.com/baron8899/zphisher
+WORKDIR bphish/
+ADD . /bphish
 
 RUN apt-get update
 RUN apt-get install -y curl
@@ -11,4 +10,4 @@ RUN apt-get install -y unzip
 RUN apt-get clean
 RUN apt-get install -y wget
 
-CMD ["./zphisher.sh"]
+CMD ["./bphish.sh"]
