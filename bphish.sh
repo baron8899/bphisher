@@ -273,7 +273,7 @@ start_localhost() {
 
 ## Tunnel selection
 tunnel_menu() {
-	{ clear; banner_small; }
+	{ clear; banner; }
 	cat <<- EOF
 
 		${RED}[${WHITE}01${RED}]${ORANGE} Localhost ${RED}[${CYAN}For Devs${RED}]
